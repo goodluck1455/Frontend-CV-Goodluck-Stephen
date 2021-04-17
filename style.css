@@ -13,6 +13,9 @@ body{
  margin: 20px auto;
  height: 60rem;
 display: flex;
+box-sizing: border-box;
+/* overflow: hidden; */
+overflow: hidden;
 flex-basis: 50%;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1), 0 6px 20px 0 rgba(0, 0, 0, .2);
 }
@@ -81,6 +84,7 @@ color: white;
  height: 4%;
  background: black;
  position: relative;
+
  border-bottom-left-radius: 10px;
  /* border-bottom: 40px solid black; */
 }
@@ -196,8 +200,11 @@ padding: 2px 16px 16px 13px;
 .experience h4{
  font-size: 18px;
 }
-.web-projectB, .web-projectC{
+.web-projectB{
  padding: 0px 16px 16px 13px;
+}
+.web-projectC{
+  padding: 0px 16px 16px 13px; 
 }
 
 .myProgress{
@@ -275,3 +282,86 @@ width: 75%
  color: black;
  font-weight: bold;
 }
+
+
+/* -----------------------------
+MEDIA QUERY SECTION BEGINS HERE 
+---------------------------------*/
+@media screen and (min-width: 1360px){
+    .top-border{ margin-left: 10em;}
+    .top-borderB:before{width: 5%;
+    left: 35em}
+    .top-borderB:after{    left: 30.5em}
+    .objectives{
+      margin-bottom: 1.4em;
+      padding: 40px 16px 20px 13px;}
+    }
+
+
+   /* @media screen and (min-width: 1200px){
+      .top-border{
+            margin-left: 8em;
+      }
+      .top-borderB{margin-right: 7em;}
+      .top-borderB:after{left: 23em;}
+      .top-borderB:before{    left: 27em;}
+    } */
+
+ @media screen and (min-width: 992px){
+.Fbody{width: 56%;}
+ }
+ @media screen and (min-width: 1024px) and (orientation: landscape) {
+.Fbody{width: 66%;}
+ }
+  @media screen and (max-width: 768px)  {
+.Fbody{width: 89%;}
+ }
+
+
+
+
+  @media screen and (max-width: 375px)  {
+.Fbody{
+      height: 82em;
+  width: 100%;}
+.myPic{
+   height: 120em;
+  width: 45%;
+font-size: 12px}
+.top-border{ 
+  height: 2%;
+ width: 49.2%;
+ margin-left: 4em;}
+ .top-border::after{
+  width: 15%;
+    left: -49%;
+ }
+ .top-borderB{
+   height: 3%;
+  width: 50%;
+ }
+ .top-borderB:after{
+  width: 19%;
+      left: 7.3em;
+ }
+ .top-borderB:before{
+  width: 19%;
+  left: 9.5em;
+ }
+ .top-border::before{
+  width: 15%;
+    left: -25%;
+ }
+ .objectives h4{font-size: 20px;}
+#position{font-size: 12px;}
+.objectives p{
+     padding: 10px 66px 0px 3px;
+ font-size: 15px;}
+
+ .educational-qualification{padding: 2px 78px 16px 6px;}
+.educational-qualification h4{font-size: 15px;}
+/* .experience, .web-project, .web-projectB{padding: 2px 78px 16px 6px;} */
+.experience, .web-project, .web-projectB{padding: 2px 66px 16px 6px;}
+.web-projectC{padding: 0px 16px 16px 6px}
+
+  }
